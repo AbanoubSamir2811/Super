@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="super.css"><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="opacity"></div>
+        <nav class="top-nav-group navbar navbar-expand-sm  navbar-light py-0 d-flex pt-4">
+            <div class="top-nav container px-0 my-0">
+                <a class="navbar-brand" href="#">
+                    Web Service
+                </a>
+                <ul class="navbar-nav nav-hidden">
+                    <div class="home-btn btn nav-item">
+                        Home
+                    </div>
+                    <div class="account-btn btn nav-item color-on-hover">
+                        About
+                    </div>
+                    <div class="account-btn btn nav-item color-on-hover">
+                        Services
+                    </div>
+                    <div class="dropdown text-center">
+                        <button type="button" class="account-btn color-on-hover btn dropdown-toggle"
+                            data-toggle="dropdown">
+                            Pages
+                        </button>
+                        <div class="dropdown-menu dropdown-des">
+                            <div class="dropdown-menu-sec">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                            <div class="dropdown-menu-st text-center py-2">
+                                <div class="btn btn-sign-in text-white">chat</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-btn btn nav-item color-on-hover">
+                        Contact
+                    </div>
+                    <nav class="Search-bar navbar navbar-expand-sm navbar-light flex-fill">
+                        <form class="form d-flex textnowrap flex-fill" action="/action_page.php">
+                            <input class="inp-search form-control flex-fill" type="text" placeholder="Search">
+                            <div class="search-icon text-center bg-white pt-2"><i class="fa fa-search"></i></div>
+                        </form>
+                    </nav>
+                </ul>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <span class="overlay-btn" style="font-size:30px;cursor:pointer;color: white;"
+                    onclick="openNav()">&#9776;</span>
+            </div>
+        </nav>
+        <div class="header-write container pt-lg-5">
+            <div class="dialog text-center container">
+                <h3 class="text-center pt-4">Stylish Creative Designs.</h3>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="nav-right text-center px-2">
+        <div class="btn btn-1 w-100"><i class="fa fa-chevron-right icon-1"></i><i
+                class="fa fa-chevron-right icon-1"></i></div>
+        <div class="btn-2 py-2">
+            <i class="fa fa-arrow-left icon-2 pt-3"></i>
+            <div class="back py-0 my-0">Back</div>
+        </div>
+        <div class="btn-2 py-2">
+            <i class="fa fa-download icon-2 pt-3"></i>
+            <div class="back py-0 my-0">Download</div>
+        </div>
+        <div class="btn-2 py-2 mb-3">
+            <i class="fa fa-shopping-cart icon-2 pt-3"></i>
+            <div class="back py-0 my-0">Download</div>
+        </div>
+    </div>
+
+    <div class="container d-flex bg-white py-5 w-100">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                <div class="head-col mb-2">01. VIDEO PRODUCTIONS</div>
+                <div class="btn-col">Stunning video sequence and impressing ideas are all here.</div>
+                <div class="write-col">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in
+                    faucibus orci dolor sit et amet.</div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                <div class="head-col mb-2">02. BRANDING DESIGN</div>
+                <div class="btn-col">Great reflection of your brand be achieved by top designers.</div>
+                <div class="write-col">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in
+                    faucibus orci dolor sit et amet.</div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                <div class="head-col mb-2">03. GRAPHIC DESIGN</div>
+                <div class="btn-col">Creating gorgeous graphic design meeting clients needs.</div>
+                <div class="write-col">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in
+                    faucibus orci dolor sit et amet.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" photos">
+        <div class="image-section">
+            <img id="0" class="image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGd-aGUkahQ2U0VSDpBeN5L78yyetwFQu3ww&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="1"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwrEOCk7agWyqvIKCGDDEHOH0F5dRDXkeQg&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJdHmwRLnQQHC7D6WJUVOfw6fEmIdf-QbHV1i3bxuowUjzaKLw78G3FxjeTzLFt_lN1E&usqp=CAU"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="3"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_CyXwaZNcXQteN3HyN4dSAN23CWQw1K1DIg&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="4"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoYyiUNC06DCPla9JZIjydvYnI6iK_1yBWQ&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="5"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhy0SHWnOpU7KeB-abT_3mbO9vpzapMUfHw&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="6"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHnrjw7NCDytSL4fveDmBOY_LidGAYSt2Yzw&s"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img id="7"
+                src="data:image/jpeg;base64,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"
+                alt="#">
+            <div id="o-0" class="photo-opecity"></div>
+            <div id="no-0" class="photo-noopecity">
+                <h4>UI experience</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-setting row justify-content-center pb-3">
+            <div class="web-service col-lg-4 col-md-6 pr-5 p-3">
+                <h4 class="text-white">Web Service</h4>
+                <p class="text-justify">We are real pros at digital and web design. We work for our clients to provide
+                    them with the best
+                    service and products. We value every project as we get invaluable experience.
+                </p>
+                <div class="all-media d-flex flex-col ">
+                    <a href="https://www.instagram.com/accounts/login/" class="instagram media"><img
+                            src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1796351-1524232.png?f=webp&w=128"
+                            alt="instgram"></a>
+                    <a href="https://twitter.com/login" class="twitter media"><img
+                            src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/256/FontAwesome-Brands-Square-Twitter-icon.png"
+                            alt="instgram"></a>
+                    <a href="https://www.facebook.com/?locale=ar_AR" class="facebook media"><img
+                            src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/512/FontAwesome-Brands-Facebook-icon.png"
+                            alt="instgram"></a>
+                    <a href="https://www.linkedin.com/login/ar" class="linkedin media"><img
+                            src="https://www.nicepng.com/png/full/18-184936_linkedin-clipart-icon-grunge-instagram-logo.png"
+                            alt="instgram"></a>
+                </div>
+            </div>
+
+            <div class="seful-links column col-lg-2 col-md-6 p-3">
+                <h4 class="text-white">Useful Links</h4>
+                <div href="#">About Us</div>
+                <div href="#">Blog Posts</div>
+                <div href="#">Pricing plans</div>
+                <div href="#">Services</div>
+                <div href="#">Contact us</div>
+            </div>
+
+            <div class="seful-links column col-lg-2 col-md-6 p-3">
+                <h4 class="text-white">Resources</h4>
+                <div href="#">Training</div>
+                <div href="#">Marketplace</div>
+                <div href="#">Our Experts</div>
+                <div href="#">Platform</div>
+                <div href="#">Customers</div>
+            </div>
+
+            <div class="right-foot col-lg-4 col-md-6 pr-5 p-3">
+                <h4 class="text-white">Instagram posts</h4>
+                <div class="Instagram-posts" href="#">
+                    <h5>Practice Safe Design. Always Use...</h5>
+                    <p>We work for our clients to provide them with the best service</p>
+                </div>
+                <div class="Instagram-posts" href="#">
+                    <h5>How to Start when You...</h5>
+                    <p>We work for our clients to provide them with the best service</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-footer p-4 flex justify-content-center">
+            <p class="text-center">© 2024 Web Service. All rights reserved. Design by Abanoub Samir</p>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+    <script src="super.js"></script>
+</body>
+
+</html>
